@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PriceLens – Compara Precios. Ahorra Más.</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-logo">PRICE<span style="color:#1565c0">LENS</span></div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver arriba">↑</button>
+
+
+<nav id="navbar">
+  <a class="nav-logo" href="#">
+    <svg viewBox="0 0 32 32" fill="none">
+      <circle cx="13" cy="13" r="8.5" stroke="#2e7d32" stroke-width="2.2"/>
+      <line x1="19.5" y1="19.5" x2="27" y2="27" stroke="#2e7d32" stroke-width="2.2" stroke-linecap="round"/>
+      <text x="9" y="17" font-size="8.5" fill="#2e7d32" font-weight="bold" font-family="Inter,sans-serif">$</text>
+    </svg>
+    PRICELENS
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#hero" data-section="hero">Inicio</a></li>
+    <li><a href="#how" data-section="how">Cómo funciona</a></li>
+    <li><a href="#benefits" data-section="benefits">Beneficios</a></li>
+    <li><a href="#about" data-section="about">Sobre nosotros</a></li>
+    <li><a href="#faq" data-section="faq">FAQ</a></li>
+  </ul>
+  <a href="#" class="btn-primary" style="display:none" id="nav-cta-desktop">Descargar App</a>
+  <button class="hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#hero">Inicio</a>
+  <a href="#how">Cómo funciona</a>
+  <a href="#benefits">Beneficios</a>
+  <a href="#about">Sobre nosotros</a>
+  <a href="#faq">FAQ</a>
+  <a href="#" class="btn-primary" style="text-align:center;margin-top:8px">Descargar App</a>
+</div>
+
+
+<section class="hero" id="hero">
+  <div class="hero-text">
+    <div class="hero-badge"><span></span> Disponible en Lima</div>
+    <h1>COMPARA PRECIOS.<br><span class="green">AHORRA MÁS.</span></h1>
+    <p>PriceLens te ayuda a comparar precios en supermercados y bodegas para que siempre pagues lo justo.</p>
+    <div class="hero-ctas">
+      <a href="#" class="btn-primary">Descargar App</a>
+      <a href="#demo" class="btn-outline">Probar ahora</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num"><span class="counter" data-target="200">0</span>+</div>
+        <div class="hero-stat-label">Tiendas comparadas</div>
+      </div>
+      <div>
+        <div class="hero-stat-num"><span class="counter" data-target="15000">0</span>+</div>
+        <div class="hero-stat-label">Usuarios activos</div>
+      </div>
+      <div>
+        <div class="hero-stat-num"><span class="counter" data-target="20">0</span>%</div>
+        <div class="hero-stat-label">Ahorro promedio</div>
+      </div>
+    </div>
+  </div>
+  <div class="phone-mockup">
+    <div class="phone-bar"><span>9:41</span><span>▶ ⬛ ▮</span></div>
+    <div class="phone-search">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      Buscar producto...
+    </div>
+    <div class="phone-title">Resultados</div>
+    <div class="product-card">
+      <div class="product-img">🥛</div>
+      <div>
+        <div class="product-name">Leche Entera 1L</div>
+        <div class="price-range">Rango: S/ 4.00 – S/ 5.20</div>
+      </div>
+    </div>
+    <div class="store-row"><span class="store-name">Supermercado 1</span><span class="store-price">S/ 5.20</span></div>
+    <div class="store-row"><span class="store-name">Supermercado 2</span><span class="store-price">S/ 4.50</span></div>
+    <div class="store-row">
+      <span class="store-name">Bodega</span>
+      <div style="text-align:right">
+        <div class="store-price" style="color:var(--green)">S/ 4.00</div>
+        <div class="best">✓ Mejor precio</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="how">
+  <h2 class="section-title reveal">¿Cómo funciona?</h2>
+  <p class="section-sub reveal">Encuentra el mejor precio en segundos, sin complicaciones.</p>
+  <div class="steps-grid">
+    <div class="step reveal reveal-delay-1">
+      <div class="step-num">1</div>
+      <div class="step-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/></svg>
+      </div>
+      <h3>Busca un Producto</h3>
+      <p>Escribe el nombre del producto que deseas comparar en nuestra app.</p>
+    </div>
+    <div class="step reveal reveal-delay-2">
+      <div class="step-num">2</div>
+      <div class="step-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
+      </div>
+      <h3>Comparamos precios</h3>
+      <p>Analizamos precios en tiempo real en supermercados y bodegas cercanas.</p>
+    </div>
+    <div class="step reveal reveal-delay-3">
+      <div class="step-num">3</div>
+      <div class="step-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="4" y="14" width="4" height="6" rx="1"/><rect x="10" y="10" width="4" height="10" rx="1"/><rect x="16" y="6" width="4" height="14" rx="1"/></svg>
+      </div>
+      <h3>Ve el rango de precios</h3>
+      <p>Te mostramos el rango completo y cuál tienda ofrece la mejor oferta.</p>
+    </div>
+    <div class="step reveal reveal-delay-4">
+      <div class="step-num">4</div>
+      <div class="step-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      </div>
+      <h3>Ahorra más</h3>
+      <p>Elige la mejor opción y lleva un registro de cuánto ahorras cada mes.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section benefits" id="benefits">
+  <h2 class="section-title reveal">Beneficios de usar PriceLens</h2>
+  <p class="section-sub reveal">Todo lo que necesitas para tomar decisiones de compra inteligentes.</p>
+  <div class="benefits-grid">
+    <div class="benefit-card reveal reveal-delay-1">
+      <div class="benefit-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      </div>
+      <h3>Ahorra dinero</h3>
+      <p>Encuentra siempre los mejores precios y reduce tus gastos mensuales hasta un 20%.</p>
+    </div>
+    <div class="benefit-card reveal reveal-delay-2">
+      <div class="benefit-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z"/></svg>
+      </div>
+      <h3>Información real</h3>
+      <p>Datos actualizados constantemente de múltiples establecimientos verificados.</p>
+    </div>
+    <div class="benefit-card reveal reveal-delay-3">
+      <div class="benefit-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      </div>
+      <h3>Fácil y rápido</h3>
+      <p>Interfaz intuitiva diseñada para comparar en segundos desde cualquier dispositivo.</p>
+    </div>
+    <div class="benefit-card reveal reveal-delay-4">
+      <div class="benefit-icon">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l3 3"/></svg>
+      </div>
+      <h3>Disponible siempre</h3>
+      <p>Accede a la información cuando y donde quieras, sin restricciones ni costos.</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="demo-section" id="demo">
+  <h2 class="section-title reveal">Pruébalo ahora mismo</h2>
+  <p class="section-sub reveal">Simula una búsqueda y mira cómo PriceLens compara precios al instante.</p>
+  <div class="demo-box reveal">
+    <div class="demo-suggestions">
+      <span class="demo-chip" onclick="runDemo('Leche entera')">🥛 Leche</span>
+      <span class="demo-chip" onclick="runDemo('Arroz 1kg')">🍚 Arroz</span>
+      <span class="demo-chip" onclick="runDemo('Pan de molde')">🍞 Pan</span>
+      <span class="demo-chip" onclick="runDemo('Aceite vegetal')">🫙 Aceite</span>
+      <span class="demo-chip" onclick="runDemo('Pollo entero')">🍗 Pollo</span>
+    </div>
+    <div class="demo-input-wrap">
+      <input class="demo-input" id="demo-input" type="text" placeholder="Ej: Leche entera, Arroz 1kg..."/>
+      <button class="demo-btn" onclick="runDemo()">Buscar</button>
+    </div>
+    <div class="demo-loading" id="demo-loading">
+      <div class="spinner"></div>
+      Buscando mejores precios...
+    </div>
+    <div class="demo-results" id="demo-results"></div>
+  </div>
+</section>
+
+
+<section class="mission" id="about">
+  <div class="mission-visual reveal">
+    <div class="mission-stat-card">
+      <div class="mission-stat-icon">🛒</div>
+      <div>
+        <div class="mission-stat-num">+200</div>
+        <div class="mission-stat-desc">Tiendas asociadas en Lima</div>
+      </div>
+    </div>
+    <div class="mission-stat-card">
+      <div class="mission-stat-icon">💰</div>
+      <div>
+        <div class="mission-stat-num">S/ 180</div>
+        <div class="mission-stat-desc">Ahorro mensual promedio</div>
+      </div>
+    </div>
+    <div class="mission-stat-card">
+      <div class="mission-stat-icon">⭐</div>
+      <div>
+        <div class="mission-stat-num">4.8/5</div>
+        <div class="mission-stat-desc">Calificación de usuarios</div>
+      </div>
+    </div>
+    <div class="mission-stat-card">
+      <div class="mission-stat-icon">📦</div>
+      <div>
+        <div class="mission-stat-num">+5,000</div>
+        <div class="mission-stat-desc">Productos disponibles</div>
+      </div>
+    </div>
+  </div>
+  <div class="mission-text reveal">
+    <div class="eyebrow">Nuestra Misión</div>
+    <h2>Tecnología para compras más inteligentes y ahorro real</h2>
+    <p>PriceLens surge con el propósito de ayudar a las personas a tomar decisiones de compra más informadas mediante el uso de tecnología innovadora.</p>
+    <p>Utilizamos herramientas que permiten comparar precios y promover el ahorro, contribuyendo a una mejor administración de las finanzas personales para todas las familias peruanas.</p>
+  </div>
+</section>
+
+
+<section class="testimonials">
+  <h2 class="section-title reveal">Lo que dicen nuestros usuarios</h2>
+  <p class="section-sub reveal">Miles de familias ya ahorran con PriceLens cada semana.</p>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal reveal-delay-1">
+      <div class="stars">★★★★★</div>
+      <blockquote>"He reducido mis gastos de supermercado en casi 20% mensual. Es increíble la diferencia de precios que hay entre tiendas."</blockquote>
+      <div class="reviewer">
+        <div class="avatar">MG</div>
+        <div class="reviewer-info">
+          <div class="name">María Gomez</div>
+          <div class="role">Ama de casa</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-2">
+      <div class="stars">★★★★★</div>
+      <blockquote>"La interfaz es súper limpia y rápida. Busco la leche que tomo y al toque sé a dónde ir a comprarla."</blockquote>
+      <div class="reviewer">
+        <div class="avatar">RS</div>
+        <div class="reviewer-info">
+          <div class="name">Ricardo Soto</div>
+          <div class="role">Ingeniero</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-3">
+      <div class="stars">★★★★★</div>
+      <blockquote>"Excelente herramienta para quienes manejamos presupuestos ajustados. La transparencia que ofrecen es necesaria."</blockquote>
+      <div class="reviewer">
+        <div class="avatar">LT</div>
+        <div class="reviewer-info">
+          <div class="name">Luis Torres</div>
+          <div class="role">Estudiante</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="faq-section" id="faq">
+  <h2 class="section-title reveal">Preguntas Frecuentes</h2>
+  <p class="section-sub reveal">¿Tienes dudas? Aquí están las respuestas más comunes.</p>
+  <div class="faq-wrap">
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Cómo obtienen los precios?
+        <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Recopilamos los precios directamente de supermercados y bodegas asociadas mediante actualizaciones periódicas en tiempo real.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿PriceLens es gratuito?
+        <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Sí, PriceLens es completamente gratuito para todos los usuarios, sin suscripción y sin publicidad intrusiva.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿En qué ciudades está disponible?
+        <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Actualmente en Lima Metropolitana. Próximamente en Arequipa, Trujillo y otras ciudades del Perú.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Cada cuánto se actualizan los precios?
+        <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>Los precios se actualizan diariamente. Cambios repentinos se detectan y actualizan en menos de 2 horas.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <button class="faq-question" onclick="toggleFAQ(this)">
+        ¿Puedo sugerir una tienda o producto?
+        <svg class="faq-arrow" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-answer"><p>¡Claro! Puedes enviarnos sugerencias a través de la app o por correo. Revisamos y agregamos todas las sugerencias.</p></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="cta-banner">
+  <div class="cta-left">
+    <div class="cta-basket">🧺</div>
+    <div class="cta-text">
+      <h2>Empieza a ahorrar hoy</h2>
+      <p>Descarga PriceLens y toma el control de tu dinero.</p>
+    </div>
+  </div>
+  <div class="store-badges">
+    <a href="#" class="badge">
+      <span class="badge-icon">▶</span>
+      <div class="badge-label">
+        <small>DISPONIBLE EN</small>
+        <strong>Google Play</strong>
+      </div>
+    </a>
+    <a href="#" class="badge">
+      <span class="badge-icon">&#xf8ff;</span>
+      <div class="badge-label">
+        <small>Descárgalo en el</small>
+        <strong>App Store</strong>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo">PRICE<span>LENS</span></div>
+      <p>Comparamos precios para que siempre pagues lo justo en cada compra.</p>
+    </div>
+    <div class="footer-links-group">
+      <div class="footer-col">
+        <h4>Producto</h4>
+        <ul>
+          <li><a href="#how">Cómo funciona</a></li>
+          <li><a href="#benefits">Beneficios</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#">Descargar app</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#about">Sobre nosotros</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Prensa</a></li>
+          <li><a href="#">Contáctanos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 PriceLens. Todos los derechos reservados.</p>
+    <div class="footer-socials">
+      <a href="#" title="Facebook">f</a>
+      <a href="#" title="Instagram">ig</a>
+      <a href="#" title="Twitter/X">x</a>
+      <a href="#" title="TikTok">tt</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
